@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForecastFashion</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a href="#" class="logo">Logo</a>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </header>
+
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>ForecastFashion</h3>
+            <p>Mobile app to recommend you the most suitable fashion items according to the weather forecast.</p>
+            <a href="#features" class="btn">Get Started</a>
+        </div>
+        <div class="imgs">
+            <p><img src="images/ui-ux.png" alt="my test image"></p>
+        </div>
+    </section>
+
+    <!-- features section -->
+    <section class="features" id="features">
+        <h1 class="heading">App Features</h1>
+        <div class="box-container">
+            <!-- fitur 1 -->
+            <div class="box">
+                <i class="fas fa-magic"></i>
+                <h3>Smooth Design</h3>
+                <p>This app features a smooth design, giving the best experience to users.</p>
+            </div>
+            <!-- fitur 2 -->
+            <div class="box">
+                <i class="fas fa-globe"></i>
+                <h3>Multiple Languages</h3>
+                <p>So that everyone can use it without any language barriers.</p>
+            </div>
+            <!-- fitur 3 -->
+            <div class="box">
+                <i class="fa-solid fa-cloud-moon"></i>
+                <h3>Accurate Weather Forecast</h3>
+                <p>Accurate prediction of weather. Guaranteed you'll wear the suitable outfit.</p>
+            </div>
+            <!-- fitur 4 -->
+            <div class="box">
+                <i class="fa-solid fa-newspaper"></i>
+                <h3>Fashion Trends & News</h3>
+                <p>Users can keep up with the latest fashion trends & news.</p>
+            </div>
+            <!-- fitur 5 -->
+            <div class="box">
+                <i class="fa-solid fa-users-line"></i>
+                <h3>ForecastFashion Community</h3>
+                <p>Where users from all around the world can socialize together.</p>
+            </div>
+            <!-- fitur 6 -->
+            <div class="box">
+                <i class="fa-solid fa-camera"></i>
+                <h3>Augmented Reality</h3>
+                <p>Users can try on the fashion items virtually and instantly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <h1 class="heading">About The App</h1>
+        <div class="content">
+            <p>Our app was designed to help those who had trouble finding out the right outfit to wear. With this app, users can get the aid they need to choose the perfect outfit.</p>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <h1 class="heading">Get In Touch</h1>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" required>
+                <label>Name</label>
+            </div>
+            <div class="inputBox">
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="inputBox">
+                <input type="number" required>
+                <label>Number</label>
+            </div>
+            <div class="inputBox">
+                <textarea required name="" id="" cols="30" rows="10"></textarea>
+                <label>Message</label>
+            </div>
+
+            <input type="submit" class="btn" value="Send Message">
+        </form>
+    </section>
+
+    <!-- footer section -->
+    <section class="footer">
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+        <h1 class="credit">Created by <span>Jessica Anne</span> | 2272031</h1>
+    </section>
+
+    <!-- script -->
+
+    <script>
+        let menu = document.querySelector('#menu-bar');
+        let navbar = document.querySelector('.navbar');
+
+        menu.addEventListener('click', () =>{
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('nav-toggle');
+        });
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('nav-toggle');
+            
+        }
+    </script>
+    
+</body>
+</html>
